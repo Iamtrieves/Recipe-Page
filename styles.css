@@ -1,0 +1,111 @@
+:root {
+--Nutmeg: hsl(14, 45%, 36%);
+--Dark-Raspberry: hsl(332, 51%, 32%);
+--White: hsl(0, 0%, 100%);
+--Rose-White: hsl(330, 100%, 98%);
+--Eggshell: hsl(30, 54%, 90%);
+--Light-Grey: hsl(30, 18%, 87%);
+--Wenge-Brown: hsl(30, 10%, 34%);
+--Dark-Charcoal: hsl(24, 5%, 18%);
+--Rasberry: hsl(347, 64%, 96%);
+
+}
+body {
+    font-size: 16px;
+    background-color: var(--Eggshell);
+    display: grid;
+    place-items: center;
+}
+main {
+    background-color: var(--White);
+    padding: 2rem;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
+.bg-img {
+    width: 100%;
+    border-radius: 10px;
+    background-image: url(/assets/images/image-omelette.jpeg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.second-div {
+    background-color: var(--Rasberry);
+    padding: .5rem 1.3rem;
+}
+h4 {
+    color: var(--Dark-Raspberry);
+    font-size: 1.1em;
+    margin-bottom: -5px;
+}
+.second-div > ul, li {
+    margin: inherit;
+    padding: inherit;
+}
+li {
+    margin-top: 5px;
+}
+h3 {
+    font-size: 1.5rem;
+    color: var(--Nutmeg);
+}
+.third-div {
+    border-bottom: 1px solid rgb(233, 230, 230);
+    padding-bottom: 20px;
+}
+.third-div > ul {
+    margin: -10px;
+}
+.third-div > ul > li {
+    padding-bottom: 1rem;
+}
+.fourth-div {
+    border-bottom: 1px solid rgb(233, 230, 230);
+    padding-bottom: 40px;
+}
+.fourth-div > ol {
+    padding: 0;
+    margin: 0 0 0 8px;
+    text-align: justify;
+}
+.fourth-div > ol > li {
+    padding-bottom: 10px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(222, 221, 221);
+    padding-bottom: 1rem;
+}
+.right {
+    color: var(--Nutmeg);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 620px) {
+    main {
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    .container {
+        padding: 1rem 2rem;
+    }
+    .bg-img {
+        background-image: url(/assets/images/image-omelette.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 300px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    p {
+        text-align: justify;
+    }
+}
